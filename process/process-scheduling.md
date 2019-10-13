@@ -2,7 +2,7 @@
 
 ## Scheduling Queues
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
 When process enters system, PCB goes to Ready Queue first, and waits to be executed.  
 Once process occupy the processor, some events like:  
