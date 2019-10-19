@@ -6,14 +6,14 @@ Thread is basic unit of CPU Processing
 
 ![Single / Multi Threads](../.gitbook/assets/image%20%286%29.png)
 
- Each thread has
+ **Each thread has**
 
 * Thread ID
 * PC
 * Registers
 * Stack
 
- Threads in same process share
+ **Threads in same process share**
 
 * Code
 * Data Section
