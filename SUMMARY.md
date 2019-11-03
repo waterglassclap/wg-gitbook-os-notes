@@ -22,3 +22,9 @@
 
 * [Keywords](network/keywords.md)
 
+## CPU Scheduling
+
+* [Basic Concepts](cpu-scheduling/basic-concepts.md)
+* [Scheduling Criteria](cpu-scheduling/scheduling-criteria.md)
+* [Untitled](cpu-scheduling/untitled.md)
+
