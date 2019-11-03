@@ -24,6 +24,7 @@
 * [Scheduling Criteria](cpu-scheduling/scheduling-criteria.md)
 * [Scheduling Algorithms](cpu-scheduling/untitled.md)
 * [Multiple Processor Scheduling](cpu-scheduling/multiple-processor-scheduling.md)
+* [Thread Scheduling](cpu-scheduling/thread-scheduling.md)
 
 ## Network
 
