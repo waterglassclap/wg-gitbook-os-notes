@@ -18,13 +18,14 @@
 * [Java Thread](thread/java-thread.md)
 * [Threading Issues](thread/threading-issues.md)
 
-## Network
-
-* [Keywords](network/keywords.md)
-
 ## CPU Scheduling
 
 * [Basic Concepts](cpu-scheduling/basic-concepts.md)
 * [Scheduling Criteria](cpu-scheduling/scheduling-criteria.md)
-* [Untitled](cpu-scheduling/untitled.md)
+* [Scheduling Algorithms](cpu-scheduling/untitled.md)
+* [Multiple Processor Scheduling](cpu-scheduling/multiple-processor-scheduling.md)
+
+## Network
+
+* [Keywords](network/keywords.md)
 

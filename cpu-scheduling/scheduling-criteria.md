@@ -6,7 +6,7 @@ Scheduling is for
 -  maximizing cpu utilization, throughput  
 -  minimizing turnaround time, waiting time, response time
 
-but researchers found in interactive system, minimizing variance o
+but researchers found in interactive system, reducing variance of requests is more important than reducing mean response time.
 
 ### CPU Utilization
 
