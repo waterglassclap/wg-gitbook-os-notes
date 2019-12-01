@@ -31,4 +31,5 @@
 * [Background](process-synchronization/background.md)
 * [The Critical-Section Problem](process-synchronization/the-critical-section-problem.md)
 * [Peterson's Solution](process-synchronization/petersons-solution.md)
+* [Semaphores](process-synchronization/semaphores.md)
 
