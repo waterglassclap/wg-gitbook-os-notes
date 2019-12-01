@@ -25,8 +25,8 @@
 * [Scheduling Algorithms](cpu-scheduling/untitled.md)
 * [Multiple Processor Scheduling](cpu-scheduling/multiple-processor-scheduling.md)
 * [Thread Scheduling](cpu-scheduling/thread-scheduling.md)
-
-## Network
-
-* [Keywords](network/keywords.md)
+* [Process Synchronization](process-synchronization/README.md)
+  * [Background](process-synchronization/background.md)
+  * [The Critical-Section Problem](process-synchronization/the-critical-section-problem.md)
+  * [Peterson's Solution](process-synchronization/petersons-solution.md)
 
