@@ -36,7 +36,17 @@ There are two types of semaphore
 * **Counting** semaphore value has no limit
 * **Binary** \(**Mutex lock**\) semaphore value can be 0 or 1
 
+
+
+
+
 // TODO
+
+## References
+
+{% embed url="https://stackoverflow.com/questions/29213346/working-with-threads-and-a-semaphore-in-java-how-does-acquire-work" %}
+
+{% embed url="https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/5\_Synchronization.html" %}
 
 
 
