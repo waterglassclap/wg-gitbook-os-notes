@@ -6,7 +6,7 @@ description: models managing user threads / kernel threads
 
 ## Many to One Model
 
-![](../.gitbook/assets/image%20%2819%29.png)
+![](../.gitbook/assets/image%20%2821%29.png)
 
 #### Pros
 
@@ -19,7 +19,7 @@ description: models managing user threads / kernel threads
 
 ## One to One Model
 
-![](../.gitbook/assets/image%20%2820%29.png)
+![](../.gitbook/assets/image%20%2822%29.png)
 
 #### Pros
 
@@ -32,7 +32,7 @@ description: models managing user threads / kernel threads
 
 ## Many to Many Model
 
-![](../.gitbook/assets/image%20%2822%29.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 
 **Pros**
 

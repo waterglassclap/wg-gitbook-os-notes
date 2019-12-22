@@ -32,4 +32,6 @@
 * [The Critical-Section Problem](process-synchronization/the-critical-section-problem.md)
 * [Peterson's Solution](process-synchronization/petersons-solution.md)
 * [Semaphores](process-synchronization/semaphores.md)
+* [Classic Problems of Synchronization](process-synchronization/classic-problems-of-synchronization.md)
+* [Monitor](process-synchronization/monitor.md)
 

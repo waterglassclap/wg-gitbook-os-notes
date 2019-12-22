@@ -8,7 +8,7 @@
 | P2 | 3 |
 | P3 | 3 |
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2813%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2814%29.png)
 
 * Preemptive
 * Convoy effect : all other process waits for a long process to be ended
@@ -22,7 +22,7 @@
 | P3 | 7 |
 | P4 | 3 |
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2826%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2828%29.png)
 
 * Can be Non-Preemptive / Preemptive
 
@@ -61,7 +61,7 @@
 
 ## **Multilevel Feedback Queue Scheduling**
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2810%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2811%29.png)
 
 * Jobs can be moved from queue to queue
 

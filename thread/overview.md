@@ -4,7 +4,7 @@
 
 Thread is basic unit of CPU Processing
 
-![Single / Multi Threads](../.gitbook/assets/image%20%289%29.png)
+![Single / Multi Threads](../.gitbook/assets/image%20%2810%29.png)
 
  **Each thread has**
 

@@ -2,7 +2,7 @@
 
 ## Process Creation
 
-![typical system process tree in linux system](../.gitbook/assets/image%20%287%29.png)
+![typical system process tree in linux system](../.gitbook/assets/image%20%288%29.png)
 
 Process \(parent\) creates new process \(child\)
 
