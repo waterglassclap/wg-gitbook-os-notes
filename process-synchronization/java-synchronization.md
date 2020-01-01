@@ -2,9 +2,7 @@
 
 When one application access with multiple thread **concurrently**, and data consistency is preserved, we call this **Thread Safe**
 
-## **Bounded Buffer**
-
-### **Busy Waiting**
+## **Busy Waiting**
 
 We described busy waiting in semaphore section:
 
@@ -24,7 +22,7 @@ But, consider this scenario:
 As consumer has low priority than producer, Consumer will never be scheduled with JVM.  
 This situation called **Livelock**
 
-### Race Condition
+## Race Condition
 
 We described race condition in background section:
 
@@ -73,7 +71,7 @@ public synchronized Object remove() {
 }
 ```
 
-### Deadlock
+## Deadlock
 
 
 
