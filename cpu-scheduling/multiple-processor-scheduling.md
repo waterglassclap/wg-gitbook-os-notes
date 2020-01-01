@@ -26,7 +26,7 @@ Note that load balancing sometimes against processor affinity. So, in some syste
 
 ## Symmetric Multithreading
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2826%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2827%29.png)
 
 Symmetric multithreading, \(so called hyperthreading in intel\) is to provide multiple logical processor in same physical processor.
 
