@@ -119,6 +119,7 @@ monitor DiningPhilosophers {
         if ((states[(i + 4) % 5] != State.EATING) &&
             (states[i] == State.HUNGRY) &&
             (states[(i + 1) % 5] != State.EATING)) {
+
             states[i] = State.EATING;
             self[i].signal();
         }
