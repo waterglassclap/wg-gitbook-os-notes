@@ -34,5 +34,7 @@
 * [Semaphores](process-synchronization/semaphores.md)
 * [Classic Problems of Synchronization](process-synchronization/classic-problems-of-synchronization.md)
 * [Monitor](process-synchronization/monitor.md)
-* [Java Synchronization](process-synchronization/java-synchronization.md)
+* [Java Synchronization](process-synchronization/java-synchronization/README.md)
+  * [Java Synchronization - Problems](process-synchronization/java-synchronization/java-synchronization-problems.md)
+* [Untitled](process-synchronization/untitled.md)
 

@@ -71,6 +71,23 @@ public synchronized Object remove() {
 }
 ```
 
+Synchronizing code block is also allowed:
+
+```java
+Object mutexLock = new Object();
+
+...
+
+public void someMethod() {
+    nonCriticalSection();
+    
+    synchronized(mutexLock) {
+        criticalSection();
+    }
+    remainderSection();
+}
+```
+
 ## Deadlock
 
 1. Consider that buffer is full, and consumer is in sleep status
@@ -83,7 +100,7 @@ This is one example how yield\(\) makes deadlock
 
 #### Wait and Notify
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../../.gitbook/assets/image%20%2811%29.png)
 
 Each Object in Java has "**wait set**", "**entry set**" of threads.  
 When Thread goes to synchronized method, thread has object's lock.  
@@ -104,45 +121,6 @@ when **notify\(\)** called
 
 
 
-```java
-public synchronized void insert(Object item) {
-    while (count == BUFFER_SIZE) {
-        try {
-            wait();
-        } catch (InterruptedException e) {}
-    }
-    ++count;
-    buffer[in]= item;
-    in = (in + 1) % BUFFER_SIZE;
-    
-    notify();
-}
-
-public synchronized Object remove() {
-    Object item;
-    
-    while (count == 0) {
-        try {
-            wait();
-        } catch (InterruptedException e) {}
-        
-        --count;
-        item = buffer[out];
-        out = (out + 1) % BUFFER_SIZE;
-        
-        notify();
-        
-        return item;
-    }
-}
-```
-
-
-
-
-
-
-
 ## References
 
 {% embed url="https://app.gitbook.com/@waterglassclap/s/pl-notes/java/java-singleton" %}
@@ -150,6 +128,8 @@ public synchronized Object remove() {
 {% embed url="https://www.baeldung.com/java-wait-notify" %}
 
 {% embed url="http://egloos.zum.com/iilii/v/5565036" %}
+
+{% embed url="https://kiwi99.tistory.com/19" %}
 
 
 
