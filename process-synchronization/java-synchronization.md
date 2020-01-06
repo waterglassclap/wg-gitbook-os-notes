@@ -73,6 +73,72 @@ public synchronized Object remove() {
 
 ## Deadlock
 
+1. Consider that buffer is full, and consumer is in sleep status
+2. If producer calls insert\(\) \(as lock is usable\) producer is allowed to proceed
+3. when producer calls insert\(\), as buffer is full, producer calls yield\(\)
+4. Though, producer still has lock
+5. When consumer awaken and try to call remove\(\), as producer has lock, consumer cannot call remove\(\), so buffer remained full.
+
+This is one example how yield\(\) makes deadlock
+
+#### Wait and Notify
+
+![](../.gitbook/assets/image%20%2811%29.png)
+
+Each Object in Java has "**wait set**", "**entry set**" of threads.  
+When Thread goes to synchronized method, thread has object's lock.  
+If Thread cannot proceed \(like buffer is full, and producer cannot produce\), thread releases its lock and goes to its "wait set", to prevent deadlock.
+
+  
+when **wait\(\)** called
+
+1. Thread releases monitor's lock \(which called by synchronized\)
+2. Thread status goes to "blocked"
+3. Thread goes to object's wait set
+
+when **notify\(\)** called
+
+1. choose arbitrary Thread T from wait set
+2. move T from wait set to entry set
+3. change T's status from blocked to runnable
+
+
+
+```java
+public synchronized void insert(Object item) {
+    while (count == BUFFER_SIZE) {
+        try {
+            wait();
+        } catch (InterruptedException e) {}
+    }
+    ++count;
+    buffer[in]= item;
+    in = (in + 1) % BUFFER_SIZE;
+    
+    notify();
+}
+
+public synchronized Object remove() {
+    Object item;
+    
+    while (count == 0) {
+        try {
+            wait();
+        } catch (InterruptedException e) {}
+        
+        --count;
+        item = buffer[out];
+        out = (out + 1) % BUFFER_SIZE;
+        
+        notify();
+        
+        return item;
+    }
+}
+```
+
+
+
 
 
 
@@ -80,6 +146,10 @@ public synchronized Object remove() {
 ## References
 
 {% embed url="https://app.gitbook.com/@waterglassclap/s/pl-notes/java/java-singleton" %}
+
+{% embed url="https://www.baeldung.com/java-wait-notify" %}
+
+{% embed url="http://egloos.zum.com/iilii/v/5565036" %}
 
 
 

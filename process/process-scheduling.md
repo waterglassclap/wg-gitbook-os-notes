@@ -2,7 +2,7 @@
 
 ## Scheduling Queues
 
-![](../.gitbook/assets/image%20%2828%29.png)
+![](../.gitbook/assets/image%20%2829%29.png)
 
 When process enters system, PCB goes to Ready Queue first, and waits to be executed.  
 Once process occupy the processor, some events like:  
@@ -18,7 +18,7 @@ Each Queue's header has head / tail pointing its first / last PCB
 
 ## Scheduler
 
-![](../.gitbook/assets/image%20%2821%29.png)
+![](../.gitbook/assets/image%20%2822%29.png)
 
 **Long Term Scheduler**  
 Some system has limits for total process quantity on memory,  
@@ -30,7 +30,7 @@ Note that some system does not have long term scheduler, or takes minimal role. 
 short term scheduler picks process and move process to processor  
 
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 
 **Mid Term Scheduler**  
 Some system adopted scheduling system so called mid term scheduler.  
