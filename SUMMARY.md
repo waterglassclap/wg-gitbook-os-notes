@@ -37,5 +37,8 @@
 * [Java Synchronization](process-synchronization/java-synchronization/README.md)
   * [Java Synchronization - Problems](process-synchronization/java-synchronization/java-synchronization-problems.md)
   * [Java Synchronization - Concurrency Support](process-synchronization/java-synchronization/java-synchronization-concurrency-support.md)
-* [Untitled](process-synchronization/untitled.md)
+
+## Deadlocks
+
+* [System Model](deadlocks/system-model.md)
 

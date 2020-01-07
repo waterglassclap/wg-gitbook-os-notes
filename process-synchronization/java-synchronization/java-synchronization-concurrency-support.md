@@ -37,5 +37,36 @@ try {
 
 ## Condition Variables
 
+```java
+Lock lock = new ReentrantLock();
+Condition[] condVars = new Condition[5];
 
+for (int i = 0; i < 5; i++) {
+    condVars[i] = lock.newCondition();
+}
+
+// myNumber is the number of the thread
+// that wished to do some work
+public void doWork(int myNumber) {
+    try {
+        // if it's not my turn, then wait
+        // until I'm signaled
+        if (myNumber != turn) {
+            condVars[myNumber].await();
+        }
+        
+        // do some work for awhile
+        
+        // Finished working. Now indicate to the
+        // next waiting thread that it is their
+        // turn to do some work
+        turn = (turn + 1) % 5;
+        
+        condVars[turn].signal();
+    } catch (InterruptedException ie) {}
+    finally {
+        lock.unlock();
+    }
+}
+```
 
