@@ -2,11 +2,11 @@
 
 ## Process Creation
 
-![typical system process tree in linux system](../.gitbook/assets/image%20%288%29.png)
+![typical system process tree in linux system](../.gitbook/assets/image%20%289%29.png)
 
 Process \(parent\) creates new process \(child\)
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%283%29.png)
 
 ```c
 int main(void)

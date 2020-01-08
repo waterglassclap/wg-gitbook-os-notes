@@ -41,4 +41,6 @@
 ## Deadlocks
 
 * [System Model](deadlocks/system-model.md)
+* [Deadlock Characterization](deadlocks/deadlock-characterization.md)
+* [Methods for Handling Deadlocks](deadlocks/methods-for-handling-deadlocks.md)
 

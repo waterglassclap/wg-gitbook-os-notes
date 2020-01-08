@@ -100,7 +100,7 @@ This is one example how yield\(\) makes deadlock
 
 #### Wait and Notify
 
-![](../../.gitbook/assets/image%20%2811%29.png)
+![](../../.gitbook/assets/image%20%2813%29.png)
 
 Each Object in Java has "**wait set**", "**entry set**" of threads.  
 When Thread goes to synchronized method, thread has object's lock.  
