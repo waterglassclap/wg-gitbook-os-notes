@@ -12,9 +12,86 @@ If system do not uses any of this, system investigate if deadlock really occurre
 
 In many system deadlock occurs rarely\(so to speak, once in a year\). That is, restoring can be much more cheaper than prevention / avoidance.
 
-## Java Deadlock Handling
+For example, JVM does nothing to resolve deadlock. It is programmer's job to write deadlock-free program.
 
-**JVM does nothing to resolve deadlock. It is programmer's job to write deadlock-free program**.
+## Deadlock Detection
 
-// TODO
+### Single Instance of Each Resource Type
+
+If every resource has one instance, we can define deadlock detection with wait-for graph, describing resource allocation graph.
+
+![\(a\) Resource allocation graph. \(b\) Corresponding wait-for graph](../.gitbook/assets/image%20%2832%29.png)
+
+Only if there is cycle in this graph, there is deadlock.  
+Time complexity is **O\(n^2\)**, where n is vertices count.
+
+### Several Instances of a Resource Type
+
+Wait-for graph cannot be used on multiple instances in one resource type.  
+We can use Allocation - Request - Available Vector Table for this.
+
+For example
+
+|  | Allocation | Request | Available |
+| :--- | :--- | :--- | :--- |
+|  | A B C | A B C | A B C |
+| P0 | 0 1 0 | 0 0 0  | 0 0 0  |
+| P1 | 2 0 0 | 2 0 2 |  |
+| P2 | 3 0 3 | 0 0 0 |  |
+| P3 | 2 1 1 | 1 0 0 |  |
+| P4 | 0 0 2 | 0 0 2 |  |
+
+In this graph A, B, C are resources and P0 - P4 are processes.
+
+* **Available** : How many instances are available for each resources
+* **Allocation** : Which and how many instances are allocated for each processes
+* **Request** : How many instances are requested for each processes, per each resources
+
+Let's say there are **m resources**, **n processes**.  
+Detection Algorithms is as follows
+
+```python
+# 
+
+# 1.
+
+Work = Available[:]
+Finish = [ Allocation[i] == 0 for i in range(n) ]
+
+# 2. find i which meets
+Finish[i] == false and Request[i] <= Work
+# if i not exists, go to step 4
+
+# 3.
+Work = Work + Allocation
+Finish[i] = true
+# and go to step 2
+
+# 4.
+for i in range(n):
+    if Finish[i] is False:
+        # P[i] is in deadlock
+        print("P[i] is in deadlock")
+```
+
+Time complexity is **O\(m x n^2\)**
+
+## **Recovery from Deadlock**
+
+### Process Termination
+
+* 
+
+
+### Resource Preemption
+
+\*\*\*\*
+
+## References
+
+{% embed url="https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/7\_Deadlocks.html" %}
+
+
+
+
 

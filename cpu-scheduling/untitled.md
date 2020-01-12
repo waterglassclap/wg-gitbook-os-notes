@@ -22,7 +22,7 @@
 | P3 | 7 |
 | P4 | 3 |
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2833%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2834%29.png)
 
 * Can be Non-Preemptive / Preemptive
 
