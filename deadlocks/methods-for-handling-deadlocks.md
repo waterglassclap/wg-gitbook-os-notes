@@ -80,12 +80,18 @@ Time complexity is **O\(m x n^2\)**
 
 ### Process Termination
 
-* 
+1. **Terminate All deadlock processes** It surely breaks deadlock cycle, but all processes have to resume it's work, so cost might be too high.
+2. **Terminate processes one by one until deadlock resolved** We have to check if deadlock resolved every time we terminates process, so overhead might be quite big.
 
+Os have to decide which solution would minimize cost.
 
 ### Resource Preemption
 
-\*\*\*\*
+If preemption is needed for resolve deadlock, there are three things to consider:
+
+1. **Selection of a victim** Which resources and which process should be preempted?
+2. **Rollback** How to preempt resources from one process ?
+3. **Starvation** How to prevent starvation on resource preemption ? General solution is that considering rollback count on selection on victim.
 
 ## References
 
