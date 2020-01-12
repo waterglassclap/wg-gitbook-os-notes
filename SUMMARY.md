@@ -44,3 +44,7 @@
 * [Deadlock Characterization](deadlocks/deadlock-characterization.md)
 * [Methods for Handling Deadlocks](deadlocks/methods-for-handling-deadlocks.md)
 
+## Main Memory
+
+* [Background](main-memory/background.md)
+
