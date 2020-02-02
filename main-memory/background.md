@@ -24,10 +24,15 @@ there are **base register** and **limit register** to mark space range. E.g. if 
 
 **Compile Time linking :** Logical Address **==** Physical Address  
 **Load Time Linking** : Logical Address **==** Physical Address  
-**RunTime Linking** : Logical Address **!=** Physical Address  
+**RunTime Linking** : Logical Address **!=** Physical Address
 
+In Runtime Linking, we call **logical address as virtual address**. 
 
-In Runtime Linking, 
+Mapping between **virtual address** &lt;-&gt; **physical address** is managed by **MMU** \(Memory Management Unit\)
+
+### Dynamic Loading
+
+To utilize 
 
 ## References
 
