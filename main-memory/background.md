@@ -17,6 +17,18 @@ there are **base register** and **limit register** to mark space range. E.g. if 
 
 // TODO
 
+## Logical Versus Physical Address Space
+
+**Logical Address** : address created by **CPU**  
+**Physical Address** : address managed by **Memory**
+
+**Compile Time linking :** Logical Address **==** Physical Address  
+**Load Time Linking** : Logical Address **==** Physical Address  
+**RunTime Linking** : Logical Address **!=** Physical Address  
+
+
+In Runtime Linking, 
+
 ## References
 
 {% embed url="https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html" %}
