@@ -19,9 +19,35 @@ Every addresses created by CPU is refer to this registers. That is, it protects 
 
 ## Memory Allocation
 
-Simplest way of memory allocation is that separate memory into partitions with same and fixed size. This is not used for modern os.
+Simplest way of memory allocation is to separate memory into partitions with same fixed size. This is not used for modern os.
 
-Alternative approach is to keep // TODO
+Alternative approach is to keep table which marks memory usage.
+
+1. Initially, all memory space is considered as one big free space.
+2. When process enters system, os put the process into input queue.
+3. Then, os finds out which / how much free space exists and how much space process requires, and allocates memory to process.
+4. Once process gets memory, it competes with another process to take up CPU.
+5. Once process is over, it returns its memory space.
+
+### Dynamic Storage Allocation Problem
+
+Dynamic Storage Allocation problem is to optimize memory allocation with n-byte memory block request \(with arbitrary free space list\).
+
+1. **First Fit** Allocate first space which have enough space for request.
+2. **Best Fit** Allocate smallest space of spaces which have enough space for request.
+3. **Worst Fit** Allocate biggest space of spaces which have enough space for request.
+
+With simulation, it is identified that first fit or best fit is better than worst fit, both in time and space.  
+First fit and best fit cannot compete on space efficiency, but in time efficiency, generally first fit is faster than best fit. 
+
+## Fragmentation
+
+With repeating allocation / deallocation of memory, some fragments becomes too small.  
+If some memory fragments are too small individually, but big enough in total, we call it as **External Fragmentation**.
+
+
+
+ 
 
 ## References
 
