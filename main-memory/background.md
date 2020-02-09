@@ -52,10 +52,10 @@ Unlike dynamic loading, dynamic linking should be supported by os, because, only
 
 ## Swapping
 
-If necessary, process can be swapped to sub-memory and swapped back to main memory again.
+If necessary, process can be swapped to sub-memory and swapped back to main memory again.  
+Swapping policy can use priority of each processes. If process with higher priority is arrived, memory manager swap out processes with lower priority. We call it **roll-in** and **roll-out**.
 
-Considering round-robin scheduling multiprogramming environment.  
-If one 
+Swapping takes long context-switching time, and most of the swap time is disk transfer time.
 
 ## References
 

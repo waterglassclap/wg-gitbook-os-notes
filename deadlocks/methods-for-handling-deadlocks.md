@@ -20,7 +20,7 @@ For example, JVM does nothing to resolve deadlock. It is programmer's job to wri
 
 If every resource has one instance, we can define deadlock detection with wait-for graph, describing resource allocation graph.
 
-![\(a\) Resource allocation graph. \(b\) Corresponding wait-for graph](../.gitbook/assets/image%20%2832%29.png)
+![\(a\) Resource allocation graph. \(b\) Corresponding wait-for graph](../.gitbook/assets/image%20%2834%29.png)
 
 Only if there is cycle in this graph, there is deadlock.  
 Time complexity is **O\(n^2\)**, where n is vertices count.
