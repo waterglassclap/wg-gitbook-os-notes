@@ -48,4 +48,5 @@
 
 * [Background](main-memory/background.md)
 * [Contiguous Memory Allocation](main-memory/contiguous-memory-allocation.md)
+* [Paging](main-memory/paging.md)
 

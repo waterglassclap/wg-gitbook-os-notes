@@ -2,7 +2,7 @@
 
 ## The Process
 
-![Process in memory](../.gitbook/assets/image%20%2819%29.png)
+![Process in memory](../.gitbook/assets/image%20%2824%29.png)
 
 **Process** = **Program on execution**
 
@@ -23,14 +23,14 @@ There are 5 steps for Process
 
 To be more specific, considering swap space there would be 2 more states:
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%2816%29.png)
 
     6. **SWAPPED OUT AND WAITING** : process has been swapped out on waiting  
     7. **SWAPPED OUT AND BLOCKED** : process has been swapped out on blocked
 
 ## Process Control Block
 
-![](../.gitbook/assets/image%20%2822%29.png)
+![](../.gitbook/assets/image%20%2827%29.png)
 
 PCB is data structure in the operating system kernel containing the information needed to manage a particular process.  
 The fields varies to OS, but there are some common fields like:

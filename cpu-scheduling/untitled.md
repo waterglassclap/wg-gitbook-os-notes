@@ -8,7 +8,7 @@
 | P2 | 3 |
 | P3 | 3 |
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2820%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2825%29.png)
 
 * Preemptive
 * Convoy effect : all other process waits for a long process to be ended
@@ -22,7 +22,7 @@
 | P3 | 7 |
 | P4 | 3 |
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2836%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2841%29.png)
 
 * Can be Non-Preemptive / Preemptive
 
@@ -36,7 +36,7 @@
 | P4 | 1 | 5 |
 | P5 | 5 | 2 |
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%286%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%289%29.png)
 
 * Can be Non-Preemptive / Preemptive
 * **Starvation Problem \(Infinite blocking\).** Solution : **Aging**
@@ -49,7 +49,7 @@
 | P2 | 3 |
 | P3 | 3 |
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%281%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%282%29.png)
 
 * **Performance highly depends on Time slice size**
 * When **Time slice is extremely small**, it called "**Processor sharing**", and it seems that each process has its own processor which performs 1/n performance of real processor theoretically \(In real world, we should consider context switching time\).
@@ -57,11 +57,11 @@
 
 ## Multilevel Queue Scheduling
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%285%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%288%29.png)
 
 ## **Multilevel Feedback Queue Scheduling**
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2817%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2822%29.png)
 
 * Jobs can be moved from queue to queue
 

@@ -5,7 +5,7 @@ Os process usually allocated nearby Interrupt vector **\(interrupt vector usuall
 
 ## Memory Protection
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2819%29.png)
 
 **Memory protection** can be done with **reallocation register** and **limit register**.
 
@@ -42,12 +42,19 @@ First fit and best fit cannot compete on space efficiency, but in time efficienc
 
 ## Fragmentation
 
+### External Fragmentation
+
 With repeating allocation / deallocation of memory, some fragments becomes too small.  
 If some memory fragments are too small individually, but big enough in total, we call it as **External Fragmentation**.
 
+In First Fit, statistically, when N blocks are allocated, 0.5N blocks is useless because of external fragmentation. This is called **50-percent rule.**
 
+One of the ways to solve this problem is **compaction**. Another way is to allocate each process' address space far enough.
 
- 
+### **Internal Fragmentation**
+
+In general, we divide memory with certain size of fragments, and allocates adequate number of fragments.  
+In this strategy, some fragments have leftover space. We call it as **Internal Fragmentation**.
 
 ## References
 

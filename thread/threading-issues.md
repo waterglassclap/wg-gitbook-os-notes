@@ -70,7 +70,7 @@ All Signals handled by one of the:
 
 ## LWP
 
-![From : https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/4\_Threads.html](../.gitbook/assets/image%20%2823%29.png)
+![From : https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/4\_Threads.html](../.gitbook/assets/image%20%2828%29.png)
 
 In Many-to-Many model, there are user thread &lt;-&gt; kernel thread communication issue.  
 To increase communication performance between user thread &lt;-&gt; kernel thread, many systems supports **Light Weight Process.**

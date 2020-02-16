@@ -77,7 +77,7 @@ thrd.setDaemon(true);
 
 ## JAVA Thread Status
 
-![source : https://www.javatpoint.com/life-cycle-of-a-thread ](../.gitbook/assets/image%20%282%29.png)
+![source : https://www.javatpoint.com/life-cycle-of-a-thread ](../.gitbook/assets/image%20%283%29.png)
 
 1. **new** : Thread object created with new ...\(\); call
 2. **runnable** : when start\(\) command calls thread's run\(\) method
