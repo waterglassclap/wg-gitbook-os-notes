@@ -4,7 +4,7 @@ Paging removes constraints that logical address space should be gathered in one 
 
 ## Basic Method
 
-![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2815%29.png)
+![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2816%29.png)
 
 Physical memory is divided into **Frame** with fixed size.  
 Logical memory is divided into **Page,** which has **same size with frame**.
@@ -66,18 +66,36 @@ TLB is quite costly, and size varies from 54 ~ 1024.
 
 Usually, TLB contains only part of page table. There are many ways to implement TLB, from LRU or arbitrary.
 
-Some TLB saves ASIDs\(Address-Space Identifiers\) for each item.  
-// TODO
+Some TLB saves **ASID**s\(Address-Space Identifiers\) for each item.  
+ASID indicates which TLB item is belong to \(process\), and protects address space of process.
 
+Hit Ratio means probability of finding page number in TLB.
 
+## Protection
 
+![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2833%29.png)
 
+In page environment, memory protection is implemented with **protection bits** for each frame.  
+These bits are usually included in page table.  
+If write request comes for read-only memory, hardware trap is conveyed to OS.
 
-\*\*\*\*
+There are **valid / invalid bit** on each item of page table.  
+If this bit set as valid, it means that this page is legal. If this bit set as invalid, it means that this page is not included in process' logical address space.  
+That is, illegal address can be found with valid / invalid bit.
 
+Some system uses **PTLR \(Page Table Length Register\)** to measure page table size.  
+Every logical address is compared with PTLR value to check range. If it's not in range, trap occurred.
 
+## Shared Pages 
 
+![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%289%29.png)
 
+Another advantage of paging is that it makes sharing common code easy.  
+Consider 40 users runs editor program, and editor takes 150KB codes and 50KB data space.  
+Without sharing, it takes 200 \* 40 = 8000KB memory space.  
+With sharing, it takes 150KB of shared code copy + 50 KB \* 40 of data space = 2150KB.
+
+Note that sharing code should be reentrant routine.
 
 ## References
 

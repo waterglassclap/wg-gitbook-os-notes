@@ -30,9 +30,9 @@ To prevent this common problems, Researchers developed high-class constructs lik
 
 ## **Usage**
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](../.gitbook/assets/image%20%2831%29.png)
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
 Monitor is class. ****Restriction is that **only one method within any given monitor object may be active at the same time**
 
@@ -42,7 +42,7 @@ We can define condition variable in monitor:
 condition x, y;
 ```
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
 For conditional variable, only two action is allowed:
 

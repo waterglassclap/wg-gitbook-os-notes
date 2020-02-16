@@ -5,7 +5,7 @@ Os process usually allocated nearby Interrupt vector **\(interrupt vector usuall
 
 ## Memory Protection
 
-![](../.gitbook/assets/image%20%2819%29.png)
+![](../.gitbook/assets/image%20%2820%29.png)
 
 **Memory protection** can be done with **reallocation register** and **limit register**.
 
