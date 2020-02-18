@@ -49,4 +49,5 @@
 * [Background](main-memory/background.md)
 * [Contiguous Memory Allocation](main-memory/contiguous-memory-allocation.md)
 * [Paging](main-memory/paging.md)
+* [Structure of the Page Table](main-memory/structure-of-the-page-table.md)
 
