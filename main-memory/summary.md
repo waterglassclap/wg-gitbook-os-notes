@@ -23,7 +23,20 @@ If paging and segmentation have to manipulated in main memory, memory access spe
 
 ## **Relocation**
 
-// TODO
+One of the solution for external fragmentation is compaction.  
+To do this, logical address can be dynamically relocated. If address defined in load time, it cannot be done.
+
+## Swapping
+
+OS can move process from main memory to sub memory, or move process from sub memory to main memory.
+
+## Sharing
+
+Sharing is to execute many process in limited memory.
+
+## Protection
+
+Page or Segment can define each part as execute-only / read-only / read-write.
 
 
 
