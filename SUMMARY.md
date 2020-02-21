@@ -50,4 +50,6 @@
 * [Contiguous Memory Allocation](main-memory/contiguous-memory-allocation.md)
 * [Paging](main-memory/paging.md)
 * [Structure of the Page Table](main-memory/structure-of-the-page-table.md)
+* [Segmentation](main-memory/segmentation.md)
+* [Summary](main-memory/summary.md)
 

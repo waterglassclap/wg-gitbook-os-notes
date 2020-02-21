@@ -7,7 +7,7 @@ CPU Scheduling is to utilize CPU at most. Maximum utilization might mean:
 
 ## CPU-I/O Burst Cycle
 
-![source: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2832%29.png)
+![source: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2834%29.png)
 
 Process operation = CPU operation + I/O operation.   
 Process starts with CPU Burst. Then I/O Burst occurs, and another CPU burst ,.. and so on.  

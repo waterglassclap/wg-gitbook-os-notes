@@ -4,19 +4,19 @@ Paging removes constraints that logical address space should be gathered in one 
 
 ## Basic Method
 
-![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2817%29.png)
+![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2819%29.png)
 
 Physical memory is divided into **Frame** with fixed size.  
 Logical memory is divided into **Page,** which has **same size with frame**.
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%283%29.png)
 
 Every Address comes from CPU is consist of 1. page number 2. page offset
 
 1. **page number** for accessing page table. page table has base address of page in main memory.
 2. **page offset** pageTable\[page number\] + page offset =&gt; physical address for memory device.
 
-![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%288%29.png)
+![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2810%29.png)
 
 Above picture is example of 4B size paging with 32B memory.
 
@@ -55,7 +55,7 @@ so there are 2 times of memory access.
 
 ### TLB
 
-![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%286%29.png)
+![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%288%29.png)
 
 Standard way to solve this is to use **small hardware cache**, called **TLB**\(Translation Look-aside buffers\)  
 TLB is consist of fast associative memory. Items in TLB is in key : value form.  
@@ -73,7 +73,7 @@ Hit Ratio means probability of finding page number in TLB.
 
 ## Protection
 
-![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2835%29.png)
+![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2838%29.png)
 
 In page environment, memory protection is implemented with **protection bits** for each frame.  
 These bits are usually included in page table.  
@@ -88,7 +88,7 @@ Every logical address is compared with PTLR value to check range. If it's not in
 
 ## Shared Pages 
 
-![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2810%29.png)
+![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2812%29.png)
 
 Another advantage of paging is that it makes sharing common code easy.  
 Consider 40 users runs editor program, and editor takes 150KB codes and 50KB data space.  
