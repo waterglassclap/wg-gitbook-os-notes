@@ -53,3 +53,7 @@
 * [Segmentation](main-memory/segmentation.md)
 * [Summary](main-memory/summary.md)
 
+## Virtual Memory
+
+* [Background](virtual-memory/background.md)
+
