@@ -50,11 +50,37 @@ In this sequence, there would be 10 page fault on 4 frame, while 9 page fault oc
 
 ## Optimal Page Replacement
 
+**Optimal Page Replacement** is to find page which have **longest unused time from now**, and replace it.
+
+This guarantees lowest page fault rate on fixed number of frames.  
+Unfortunately, it is hard to implement. Optimal page replacement is used for measure other page replacement algorithms.
+
+## LRU Page Replacement
+
+**LRU Page Replacement** maintains last used time per each pages, and **replace least recently used pages on page replacement**.
+
+**LRU Algorithm** is **Stack Algorithm**.  
+Stack Algorithm means that
+
+> P\(n\): set of pages in memory with n number of frame
+>
+> P\(n\) ⊂ P\(n + 1\) for all n, for all time
+
+and it has same meaning with "not make belady's anomaly"
+
+To implement LRU Page Replacement, it requires hardware support for doubly linked list.
+
+Note that every time page is referenced, it takes 10 times minimum to update doubly linked list.  
+Few system can take overhead like this.
+
+## LRU Approximation Page Replacement
+
+As LRU Page Replacement costs too high, we can use approximation instead.  
+**In LRU Approximation Page Replacement, we utilize reference bit.**
+
+### **Additional Reference Bits Algorithm**
+
 // TODO
-
-
-
-
 
 ## References
 
