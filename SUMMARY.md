@@ -56,4 +56,7 @@
 ## Virtual Memory
 
 * [Background](virtual-memory/background.md)
+* [Demand Paging](virtual-memory/demand-paging.md)
+* [Copy on Write](virtual-memory/copy-on-write.md)
+* [Page Replacemenet](virtual-memory/page-replacemenet.md)
 

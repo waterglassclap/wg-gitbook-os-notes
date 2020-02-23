@@ -17,7 +17,7 @@ If **four condition all set**, deadlock **can happen**
 
 ![Resource Allocation Graph Example](../.gitbook/assets/image%20%2821%29.png)
 
-![Deadlock Graph](../.gitbook/assets/image%20%2839%29.png)
+![Deadlock Graph](../.gitbook/assets/image%20%2840%29.png)
 
 ![Non-deadlock graph](../.gitbook/assets/image.png)
 

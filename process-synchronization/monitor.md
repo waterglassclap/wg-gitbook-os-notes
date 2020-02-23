@@ -30,7 +30,7 @@ To prevent this common problems, Researchers developed high-class constructs lik
 
 ## **Usage**
 
-![](../.gitbook/assets/image%20%2835%29.png)
+![](../.gitbook/assets/image%20%2836%29.png)
 
 ![](../.gitbook/assets/image%20%2816%29.png)
 

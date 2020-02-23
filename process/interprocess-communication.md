@@ -7,7 +7,7 @@ Processes which affects / be affected by other processes are called cooperating 
 3. **Modularity** : We may want to divide task into multiple process or threads for modularity.
 4. **Convenience** : One user may perform multiple tasks like editing, printing, compiling at same time.
 
-![a. message passing, b. shared memory](../.gitbook/assets/image%20%2842%29.png)
+![a. message passing, b. shared memory](../.gitbook/assets/image%20%2843%29.png)
 
 Cooperating process needs **Interprocess Communication : IPC**  
 There are two models for this: 1. **Shared Memory** 2. **Message Passing**

@@ -73,7 +73,7 @@ Hit Ratio means probability of finding page number in TLB.
 
 ## Protection
 
-![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2838%29.png)
+![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2839%29.png)
 
 In page environment, memory protection is implemented with **protection bits** for each frame.  
 These bits are usually included in page table.  
