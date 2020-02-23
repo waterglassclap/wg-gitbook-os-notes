@@ -4,7 +4,7 @@ Paging removes constraints that logical address space should be gathered in one 
 
 ## Basic Method
 
-![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2819%29.png)
+![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2820%29.png)
 
 Physical memory is divided into **Frame** with fixed size.  
 Logical memory is divided into **Page,** which has **same size with frame**.
@@ -16,7 +16,7 @@ Every Address comes from CPU is consist of 1. page number 2. page offset
 1. **page number** for accessing page table. page table has base address of page in main memory.
 2. **page offset** pageTable\[page number\] + page offset =&gt; physical address for memory device.
 
-![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2810%29.png)
+![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2811%29.png)
 
 Above picture is example of 4B size paging with 32B memory.
 
@@ -73,7 +73,7 @@ Hit Ratio means probability of finding page number in TLB.
 
 ## Protection
 
-![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2839%29.png)
+![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2840%29.png)
 
 In page environment, memory protection is implemented with **protection bits** for each frame.  
 These bits are usually included in page table.  
@@ -88,7 +88,7 @@ Every logical address is compared with PTLR value to check range. If it's not in
 
 ## Shared Pages 
 
-![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2812%29.png)
+![Reference: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8\_MainMemory.html](../.gitbook/assets/image%20%2813%29.png)
 
 Another advantage of paging is that it makes sharing common code easy.  
 Consider 40 users runs editor program, and editor takes 150KB codes and 50KB data space.  

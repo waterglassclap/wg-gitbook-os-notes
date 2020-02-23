@@ -15,9 +15,9 @@ If **four condition all set**, deadlock **can happen**
 **Each dot in Rn** : resource instance  
 **Pn** : Process
 
-![Resource Allocation Graph Example](../.gitbook/assets/image%20%2821%29.png)
+![Resource Allocation Graph Example](../.gitbook/assets/image%20%2822%29.png)
 
-![Deadlock Graph](../.gitbook/assets/image%20%2840%29.png)
+![Deadlock Graph](../.gitbook/assets/image%20%2841%29.png)
 
 ![Non-deadlock graph](../.gitbook/assets/image.png)
 
