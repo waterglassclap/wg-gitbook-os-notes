@@ -8,7 +8,7 @@
 | P2 | 3 |
 | P3 | 3 |
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2831%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2830%29.png)
 
 * Preemptive
 * Convoy effect : all other process waits for a long process to be ended
@@ -22,7 +22,7 @@
 | P3 | 7 |
 | P4 | 3 |
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2852%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2850%29.png)
 
 * Can be Non-Preemptive / Preemptive
 
@@ -36,7 +36,7 @@
 | P4 | 1 | 5 |
 | P5 | 5 | 2 |
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2814%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2813%29.png)
 
 * Can be Non-Preemptive / Preemptive
 * **Starvation Problem \(Infinite blocking\).** Solution : **Aging**
@@ -57,11 +57,11 @@
 
 ## Multilevel Queue Scheduling
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2812%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2811%29.png)
 
 ## **Multilevel Feedback Queue Scheduling**
 
-![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2828%29.png)
+![source : https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6\_CPU\_Scheduling.html](../.gitbook/assets/image%20%2827%29.png)
 
 * Jobs can be moved from queue to queue
 

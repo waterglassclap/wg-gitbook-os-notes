@@ -2,7 +2,7 @@
 
 ## The Process
 
-![Process in memory](../.gitbook/assets/image%20%2830%29.png)
+![Reference: https://commons.wikimedia.org/wiki/File:Process-in-memory.jpg ](../.gitbook/assets/image%20%2829%29.png)
 
 **Process** = **Program on execution**
 
@@ -11,7 +11,7 @@
 
 ## Process State
 
-![](../.gitbook/assets/process-diagram.png)
+![Reference : https://www.d.umn.edu/~gshute/os/processes-and-threads.xhtml ](../.gitbook/assets/process-diagram.png)
 
 There are 5 steps for Process
 
@@ -23,14 +23,14 @@ There are 5 steps for Process
 
 To be more specific, considering swap space there would be 2 more states:
 
-![](../.gitbook/assets/image%20%2821%29.png)
+![Reference : https://en.wikipedia.org/wiki/Process\_state ](../.gitbook/assets/image%20%2820%29.png)
 
     6. **SWAPPED OUT AND WAITING** : process has been swapped out on waiting  
     7. **SWAPPED OUT AND BLOCKED** : process has been swapped out on blocked
 
 ## Process Control Block
 
-![](../.gitbook/assets/image%20%2833%29.png)
+![Reference : https://cssimplified.wordpress.com/2015/11/23/process-control-block-pcb/](../.gitbook/assets/image%20%2832%29.png)
 
 PCB is data structure in the operating system kernel containing the information needed to manage a particular process.  
 The fields varies to OS, but there are some common fields like:
@@ -51,5 +51,7 @@ The fields varies to OS, but there are some common fields like:
 
 [https://stackoverflow.com/questions/28795024/who-controls-the-process-control-blockpcb/28795091](https://stackoverflow.com/questions/28795024/who-controls-the-process-control-blockpcb/28795091) 
 
-[https://en.wikipedia.org/wiki/Process\_state](https://en.wikipedia.org/wiki/Process_state)
+{% embed url="https://en.wikipedia.org/wiki/Process\_state" %}
+
+[https://cssimplified.wordpress.com/2015/11/23/process-control-block-pcb/](https://cssimplified.wordpress.com/2015/11/23/process-control-block-pcb/)
 
